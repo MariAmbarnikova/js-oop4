@@ -36,7 +36,7 @@
             const users = await response.json();
 
             if (response.status !== 200) {
-                console.log('Error ${response.status}: ${response.statusaText}');
+                console.log('Error ${response.status}: ${response.statusText}');
             } else {
                 const userById = users.find((element) => element.id === ID);
                 if (userById === undefined) {
